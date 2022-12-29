@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <style>
+        .container_card{
+            border: solid 1px #333;
+            border-radius: 10px;
+            margin: 2rem 1rem;
+            padding: 5px 20px;
+            justify-content: space-between;
+            align-items: center ;
+        }
+
+        .wrapper_description p{
+            font-weight: 700;
+            font-size: 20px;
+            margin-left: 30px ;
+            background-color: yellow;
+        }
+        .wrapper_description span{
+            margin-left: 1rem;
+            background-color: #fff;
+        }
+        .btn-danger{
+            margin-left: 2rem;
+        }
+    </style>
+<body>
+    <aside>
+        <ul>
+            <li>PERFIL</li>
+            <li>USUARIOS</li>
+            <li>STOCK</li>
+            <li>PANELES</li>
+            <li>INVERSORES</li>
+            <li>BATERÍAS</li>
+            <li></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>LISTA PANELES SOLARES</h1>
+        <div class="container_gallery">
+            <div class="container_card d-flex">
+                <div class="d-flex wrapper_description">
+                    <p> Título: <span>Deep Blue</span></p>
+                    <p>Descripción: <span>Estos paneles tienen el mismo aspecto externo pero ofreciendo mayor...</span></p>
+                    <p>imagen_Deep.jpg</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div class="container_card d-flex">
+                <div class="d-flex wrapper_description">
+                    <p> Título: <span>Solar JA</span></p>
+                    <p>Descripción: <span>Estos paneles tienen el mismo aspecto externo pero ofreciendo mayor...</span></p>
+                    <p>imagen_solar_ja.jpg</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div class="container_card d-flex">
+                <div class="d-flex wrapper_description">
+                    <p> Título: <span>Longi LR5</span></p>
+                    <p>Descripción: <span>Estos paneles tienen el mismo aspecto externo pero ofreciendo mayor...</span></p>
+                    <p>imagen_longi_lr5.jpg</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div class="container_card d-flex">
+                <div class="d-flex wrapper_description">
+                    <p> Título: <span>Deep Blue</span></p>
+                    <p>Descripción: <span>Estos paneles tienen el mismo aspecto externo pero ofreciendo mayor...</span></p>
+                    <p>imagen_solar.jpg</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div class="container_card d-flex">
+                <div class="d-flex wrapper_description">
+                    <p> Título: <span>Deep Blue</span></p>
+                    <p>Descripción: <span>Estos paneles tienen el mismo aspecto externo pero ofreciendo mayor...</span></p>
+                    <p>imagen_solar.jpg</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+
+            
+        </div>
+        <button class="btn btn-success">Crear más elementos</button>
+    </main>
+</body>
+</html>

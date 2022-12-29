@@ -1,0 +1,72 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color: #123;
+    color: aliceblue;
+}
+
+form{
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    border: 2px solid green;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.wrapper-data-consum{
+    display: flex;
+
+}
+.wrapper-data-consum > div{
+   margin: 1rem;
+   width: 200px;
+    
+}
+table , td , th{
+    border: 2px solid green;
+}
+table {
+    width: 700px;
+    margin: 2rem 0;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.container-hsp{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper-hsp{
+    width: 70%;
+    display: flex;
+
+
+}
+
+.wrapper-hsp label{
+    margin-right: 30px;
+}
+.wrapper-hsp select{
+    width: 200px;
+}
+
+.p-hsp{
+    border: 1px solid green;
+    width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.p-hsp span{
+    margin-left: 25rem;
+    
+}
