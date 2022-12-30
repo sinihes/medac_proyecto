@@ -1,137 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <title>Second Life APP</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Second Life APP</title>
 </head>
+
 <body>
-    <h1 class="m-5"> <img src="logo.png" alt=""> Second Life</h1>
+  <h1 class="m-5"> <img src="logo.png" alt=""> Second Life</h1>
+  <div class="contaner">
+    <div class="row">
+      <div class="col-6">
+        <h2>Datos de consumo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">DESCRIPCIÓN</th>
+              <th scope="col">NÚMERO</th>
+              <th scope="col">P(W)</th>
+              <th scope="col">HORAS</th>
+              <th scope="col">DÍAS</th>
+              <th scope="col">W/SEMANA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">nevera</th>
+              <td>1</td>
+              <td>150</td>
+              <td>24</td>
+              <td>7</td>
+              <td>25200</td>
+            </tr>
+            <tr>
+              <th scope="row">bombilla</th>
+              <td>10</td>
+              <td>10</td>
+              <td>8</td>
+              <td>7</td>
+              <td>5600</td>
+            </tr>
+            <tr>
+              <th scope="row">A.A</th>
+              <td>1</td>
+              <td>800</td>
+              <td>4</td>
+              <td>5</td>
+              <td>16000</td>
+            </tr>
+            <tr>
+              <th colspan="2" scope="row">Consumo TOTAL W.</th>
+              <th colspan="4">46800</th>
+            </tr>
+          </tbody>
+        </table>
+        <p class="p-hsp">H.S.P Selecionada es: <span>5,04</span></p>
+        <form>
+          <h2 class="text-center">Consumo dispositivos</h2>
+          <div class="wrapper-data-consum">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Descripción</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Número</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">P(W)</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Horas/día</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Días/semana</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="mb-3 form-check" style="display: grid; place-items:center;">
+            <button type="submit" class="btn btn-success mt-2">Añadir valor a la tabla</button>
+          </div>
+          <hr>
+          <h2 class="text-center">Horas solar pico</h2>
+          <div class="container-hsp">
+            <div>
+              <div class="mb-3 wrapper-hsp">
+                <label for="disabledSelect" class="form-label">Tipo</label>
+                <select id="disabledSelect" class="form-select ">
+                  <option>Aislada</option>
+                </select>
+              </div>
+              <div class="mb-3 wrapper-hsp">
+                <label for="disabledSelect" class="form-label">Provincia</label>
+                <select id="disabledSelect" class="form-select">
+                  <option>Málaga</option>
+                </select>
+              </div>
+            </div>
 
- <div class="contaner">
-        <div class="row">
-            <div class="col-6">
-                <h2>Datos de consumo</h2>
-                <table>
-
-                    <thead>
-
-                        <tr>
-                          <th scope="col">DESCRIPCIÓN</th>
-                          <th scope="col">NÚMERO</th>
-                          <th scope="col">P(W)</th>
-                          <th scope="col">HORAS</th>
-                          <th scope="col">DÍAS</th>
-                          <th scope="col">W/SEMANA</th>
-                        </tr>
-                      </thead>
-
-                      <tbody>
-                        <tr>
-                          <th scope="row">nevera</th>
-                          <td>1</td>
-                          <td>150</td>
-                          <td>24</td>
-                          <td>7</td>
-                          <td>25200</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">bombilla</th>
-                          <td>10</td>
-                          <td>10</td>
-                          <td>8</td>
-                          <td>7</td>
-                          <td>5600</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">A.A</th>
-                          <td>1</td>
-                          <td>800</td>
-                          <td>4</td>
-                          <td>5</td>
-                          <td>16000</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2" scope="row">Consumo TOTAL W.</th>
-                            <th colspan="4">46800</th>
-                        </tr>
-                      </tbody>
-                  </table>
-
-                <p class="p-hsp">H.S.P Selecionada es: <span>5,04</span></p>
-    
-<form>
-    <h2 class="text-center">Consumo dispositivos</h2>
-    <div class="wrapper-data-consum">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Descripción</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Número</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">P(W)</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Horas/día</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Días/semana</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-    </div>
-    <div class="mb-3 form-check" style="display: grid; place-items:center;">
-        <button type="submit" class="btn btn-success mt-2">Añadir valor a la tabla</button>
-    </div>
-    <hr>
-    <h2 class="text-center">Horas solar pico</h2>
-    <div class="container-hsp">
-
-        <div>
-          <div class="mb-3 wrapper-hsp">
-            <label for="disabledSelect" class="form-label">Tipo</label>
-            <select id="disabledSelect" class="form-select ">
-              <option>Aislada</option>
-            </select>
-        </div>
-        <div class="mb-3 wrapper-hsp">
-          <label for="disabledSelect" class="form-label">Provincia</label>
-          <select id="disabledSelect" class="form-select">
-            <option>Málaga</option>
-          </select>
-      </div>
-        </div>
- 
-         <div>
-            <div class="mb-3 wrapper-hsp">
+            <div>
+              <div class="mb-3 wrapper-hsp">
                 <label for="disabledSelect" class="form-label">Desde</label>
                 <select id="disabledSelect" class="form-select">
                   <option>Enero</option>
                 </select>
-            </div>
-            <div class="mb-3 wrapper-hsp">
+              </div>
+              <div class="mb-3 wrapper-hsp">
                 <label for="disabledSelect" class="form-label">Hasta</label>
                 <select id="disabledSelect" class="form-select ">
                   <option>Diciembre</option>
                 </select>
+              </div>
+
             </div>
-    
-        </div>
+          </div>
+        </form>
+      </div>
     </div>
-</form>
-            </div>
-        </div>
-    </div>
-
-
-
-
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .wrapper{
+            display: grid;
+            place-items: center;
+            width: 700px;
+            height: 900px;
+            background-color: #123;
+            border-radius: 30px;
+        }
+        .wrapper_card{
+
+            background-color: #fff;
+            width: 90%;
+            height: 90%;
+            border-radius: 30px;
+            text-align: center;
+            display: grid;
+            place-items:  start center;
+        }
+        .fa-trash-can{
+            color: red;
+        }
+
+        table, th ,td{
+            border: solid black 1px;
+            padding: 10px;
+        }
+        .total{
+            text-align: end;
+        }
+        table{
+            width: 90%;
+            height: 70%;
+        }
+        h2{
+            font-weight: 700;
+        }
+        p{
+            font-size: 20px;
+        }
+        .td_modify{
+            font-weight: 700;
+        }
+
+        .parrafo p{
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper_card">
+                <div class="mt-4 parrafo">
+                    <h2>SU CESTA</h2>
+                    <p>La recomendación más adecuada por los datos facilitados es:</p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>CANTIDAD</th>
+                            <th>PRECIO €</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Panel solar Deep Blue</td>
+                            <td>14</td>
+                            <td>1700,89</td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Inversor Invitronic v50</td>
+                            <td>1</td>
+                            <td>870</td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Batería Litio Lp40</td>
+                            <td>4</td>
+                            <td>765,30</td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="td_modify">PRECIO TOTAL CON IVA:</td>
+                            <td class="total td_modify" colspan="3">3.336,19€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-success">COMPRAR</button>
+                <p>* Si no le parece correcta la compra pongase en contacto con el departamento de <u>servicio técnico</u></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
